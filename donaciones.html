@@ -1,0 +1,31 @@
+<html>
+
+<head>
+  <title>Donaciones</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+  <main role="main">
+
+    <div class="donation--container">
+      <h1 id="donation--user" class="donation--user">Progreso de las donaciones</h1>
+      <span class="donation--title">Estatus:</span>
+      <span id="donation--goal" class="donation--goal"></span>
+      <div class="donation--bar">
+        <div class="donation--rounded">
+          <div id="donation--progress" class="donation--progress" style="width: 0;"></div>
+        </div>
+        <div id="donation--number" class="donation--number" style="left: 0;"></div>
+        <span id="donation--status" class="donation--status"></span>
+      </div>
+      <form class="form--container">
+        <input id="donation--amount" class="input" type="number" min="1" placeholder="$ Ingresa una donacion">
+        <input id="donate" class="button" type="submit" value="Donar">
+      </form>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
